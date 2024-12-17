@@ -1,0 +1,61 @@
+body{
+    background-color: hsl(0, 0%, 100%);
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.white-card{
+    background-color: hsl(0, 0%, 100%);
+    /* border: 2px solid hsl(0, 0%, 7%); */
+    border-radius: 20px;
+    /* padding: 25px; */
+    margin: auto;
+    width: 750px;
+    height: 500px;
+    overflow: hidden;
+
+    position: absolute;
+    top: 0; /*if we're to put a value like 10, the box would move 10 (idk the units) downward, to make space at the top*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    justify-content: center;
+
+    /* horizontal, vertical, blur, spread */
+    box-shadow: 10px 20px 12px 5px hsl(221, 100%, 96%);
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.results{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    height: 420px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 40px;
+
+    justify-content: center;
+    text-align: center;
+}
+
+.result-header{
+    color:hsl(241, 100%, 89%);
+    font-size: 24px;
+    font-weight: 650;
+}
+
+.score-circle{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    text-align: center;
+    justify-content: center;
+}
