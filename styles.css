@@ -16,18 +16,20 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    text-align: center;
-    justify-content: center;
+
+    display: flex;
+    /* text-align: center;
+    justify-content: center; */
 
     /* horizontal, vertical, blur, spread */
     box-shadow: 10px 20px 12px 5px hsl(221, 100%, 96%);
 }
 
-.column {
+/* .column {
     float: left;
     width: 50%;
     padding-right: 40px;
-}
+} */
 
 .results{
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -84,9 +86,70 @@ body{
     font-weight: 400;
     padding-left: 20px;
     padding-right: 20px;
-}
+} 
 
 .summary{
     padding: 40px;
-    /* justify-content: space-evenly; use for colored sctions?*/
+    width: 300px;
+}
+
+.summary-header{
+    color:hsl(224, 30%, 27%);
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.reaction-box{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.boxes{
+    height: 40px;
+    border-radius: 10px;
+    width: 260px;
+    align-items:center;
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
+    padding: 10px 15px;
+    /* margin-bottom: 20px; */
+}
+
+.reaction-icon{ /* adding img to this didnt work */
+    /* padding-left: 30px; */
+    width: 22px;
+    height: 22px;
+}
+
+.reaction-text{
+    color:hsl(0, 100%, 67%);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.elements-start{
+    justify-content: start;
+    display: flex;
+    gap: 10px;
+    /* float:left; */
+}
+
+.elements-end{
+    justify-content: end;
+    display: flex;
+    gap: 10px;
+    /* float:right; */
+}
+
+.stat{
+    color:hsl(224, 30%, 27%);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.stat-total{
+    color:hsla(224, 30%, 27%, 0.5);
+    font-size: 20px;
+    font-weight: 700;
 }
