@@ -184,4 +184,5 @@ body{
 .continue-button:hover{
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: hsl(0, 0%, 100%);
+    cursor: pointer;
 }
